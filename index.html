@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello, AI! – A Beginner's Guide for Kids</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; padding: 20px; line-height: 1.6; background: #f9f9f9; }
+    h1, h2 { color: #2c3e50; }
+    h1 { font-size: 2em; margin-top: 0; }
+    h2 { font-size: 1.5em; margin-top: 1em; }
+    .lesson { background: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    ul { margin: 10px 0 10px 20px; }
+    .activity { background: #e0f7fa; padding: 10px; border-left: 5px solid #00796b; margin-top: 10px; }
+    .reveal { margin-top: 10px; }
+    button { background-color: #00796b; color: white; border: none; padding: 8px 12px; cursor: pointer; border-radius: 5px; }
+    .quiz, .prompt, .journal { margin-top: 15px; padding: 10px; background: #f1f8e9; border-left: 4px solid #689f38; }
+    textarea { width: 100%; height: 80px; margin-top: 5px; }
+    .hidden { display: none; }
+    nav { margin-bottom: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; color: #00796b; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Hello, AI! – A Beginner's Guide for Kids (Ages 11–13)</h1>
+  <nav>
+    <a href="#lesson1">Lesson 1</a>
+    <a href="#lesson2">Lesson 2</a>
+    <a href="#lesson3">Lesson 3</a>
+    <a href="#lesson4">Lesson 4</a>
+    <a href="#lesson5">Lesson 5</a>
+    <a href="#bonus">Bonus</a>
+  </nav>
+
+  <div class="lesson" id="lesson1">
+    <h2>Lesson 1: What Is AI?</h2>
+    <p><strong>What Is AI?</strong> AI stands for Artificial Intelligence – a computer that can “think” in some ways, like solving problems, recognizing patterns, or making decisions.</p>
+    <p><strong>Where Do We See AI?</strong></p>
+    <ul>
+      <li>Maths: Online calculators that show steps</li>
+      <li>Science: Weather models, lab robots</li>
+      <li>Languages: Google Translate, grammar checkers</li>
+    </ul>
+    <div class="activity">
+      <strong>Activity:</strong> Find 5 things (apps, sites, devices) that use AI. Write what they do and how they might use AI.
+      <div class="journal">
+        <label>Write your answer here:</label>
+        <textarea placeholder="Example: Duolingo helps me learn by..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson" id="lesson2">
+    <h2>Lesson 2: Meet Your AI Study Buddy</h2>
+    <p><strong>Smart Prompts:</strong> Ask clear, focused questions.</p>
+    <ul>
+      <li><strong>Math:</strong> Step-by-step help, quizzes</li>
+      <li><strong>Science:</strong> Concept explanations, summaries</li>
+      <li><strong>Languages:</strong> Vocabulary, grammar fixes, story writing</li>
+    </ul>
+    <div class="quiz">
+      <strong>Quiz:</strong> Which is a good AI question?<br>
+      <input type="radio" name="q1"> Tell me about science.<br>
+      <input type="radio" name="q1"> Explain how volcanoes form like I'm 12. ✅<br>
+    </div>
+    <div class="activity">
+      <strong>Activity:</strong> Ask AI about a science topic or get help with a story idea.
+      <div class="prompt">
+        <button onclick="showPrompt('prompt1')">Click for a cool prompt idea</button>
+        <p id="prompt1" class="hidden">Write a story about a robot who gets lost on Mars.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson" id="lesson3">
+    <h2>Lesson 3: Creative AI – Art, Music, Stories</h2>
+    <ul>
+      <li>Story writing with AI help</li>
+      <li>AI-generated art</li>
+      <li>Music with Chrome Music Lab</li>
+    </ul>
+    <div class="activity">
+      <strong>Activity:</strong> Write a story or create a "Math Monster" character.
+      <div class="journal">
+        <label>Story Title:</label>
+        <textarea placeholder="The Time-Traveling Calculator..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson" id="lesson4">
+    <h2>Lesson 4: Be Smart with Smart Tech</h2>
+    <p><strong>AI Can:</strong> Explain, help, translate. <br><strong>AI Can't:</strong> Always be right or understand emotions.</p>
+    <ul>
+      <li>Double-check important info</li>
+      <li>Don’t share personal details</li>
+      <li>Use AI to learn, not cheat</li>
+    </ul>
+    <div class="activity">
+      <strong>Scenario:</strong> AI gives you a wrong answer. What do you do?
+      <div class="journal">
+        <textarea placeholder="I would double-check by..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson" id="lesson5">
+    <h2>Lesson 5: Your First AI Project</h2>
+    <ul>
+      <li><strong>Math:</strong> Create a quiz with AI-generated questions</li>
+      <li><strong>Science:</strong> Make a study guide with AI help</li>
+      <li><strong>Languages:</strong> Translate a story with AI</li>
+    </ul>
+    <div class="activity">
+      <strong>Final Task:</strong> Choose one project idea and write your reflections.
+      <div class="journal">
+        <label>Project idea:</label>
+        <textarea placeholder="I will make a study guide about..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="lesson" id="bonus">
+    <h2>Bonus: Cool Free Tools to Explore</h2>
+    <ul>
+      <li>ChatGPT</li>
+      <li>Khan Academy</li>
+      <li>Duolingo</li>
+      <li>Chrome Music Lab</li>
+      <li>DALL·E</li>
+      <li>Teachable Machine</li>
+    </ul>
+  </div>
+
+  <script>
+    function showPrompt(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
